@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>AllCorrect Project | Kristina Pluzharova Data Scientist</title>
+<title>AllCorrect DA Project | Kristina Pluzharova Data Scientist</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="AllCorrect Project" />
+<meta property="og:title" content="AllCorrect DA Project" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="https://pluzharovakp.github.io/ds_projects/2021/05/14/AllCorrect-Project.html" />
 <meta property="og:url" content="https://pluzharovakp.github.io/ds_projects/2021/05/14/AllCorrect-Project.html" />
@@ -14,7 +14,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-05-14T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://pluzharovakp.github.io/ds_projects/2021/05/14/AllCorrect-Project.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pluzharovakp.github.io/ds_projects/2021/05/14/AllCorrect-Project.html"},"headline":"AllCorrect Project","dateModified":"2021-05-14T00:00:00-05:00","datePublished":"2021-05-14T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"url":"https://pluzharovakp.github.io/ds_projects/2021/05/14/AllCorrect-Project.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pluzharovakp.github.io/ds_projects/2021/05/14/AllCorrect-Project.html"},"headline":"AllCorrect DA Project","dateModified":"2021-05-14T00:00:00-05:00","datePublished":"2021-05-14T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ds_projects/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pluzharovakp.github.io/ds_projects/feed.xml" title="Kristina Pluzharova | Data Scientist" /><link rel="shortcut icon" type="image/x-icon" href="/ds_projects/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,13 +69,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">AllCorrect Project</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-05-14T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">AllCorrect DA Project</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-05-14T00:00:00-05:00" itemprop="datePublished">
         May 14, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      15 min read
     
 </span></p>
 
@@ -145,231 +145,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&#34;/content/drive&#34;, force_remount=True).
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">langdetect</span> <span class="n">nltk</span>  <span class="n">deep_translator</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Collecting langdetect
-  Downloading https://files.pythonhosted.org/packages/0e/72/a3add0e4eec4eb9e2569554f7c70f4a3c27712f40e3284d483e88094cc0e/langdetect-1.0.9.tar.gz (981kB)
-     |████████████████████████████████| 983kB 15.6MB/s 
-Requirement already satisfied: nltk in /usr/local/lib/python3.7/dist-packages (3.2.5)
-Collecting deep_translator
-  Downloading https://files.pythonhosted.org/packages/67/b3/53b50057bf1a5ebbb8a77c19c42ae721129ebe1b8478029f2121a5914f07/deep_translator-1.4.2-py2.py3-none-any.whl
-Requirement already satisfied: six in /usr/local/lib/python3.7/dist-packages (from langdetect) (1.15.0)
-Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.7/dist-packages (from deep_translator) (4.6.3)
-Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from deep_translator) (2.23.0)
-Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;deep_translator) (3.0.4)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;deep_translator) (2.10)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;deep_translator) (1.24.3)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;deep_translator) (2020.12.5)
-Building wheels for collected packages: langdetect
-  Building wheel for langdetect (setup.py) ... done
-  Created wheel for langdetect: filename=langdetect-1.0.9-cp37-none-any.whl size=993223 sha256=18162673bed923d6f16678c0bac805f193005aa314d5146f7328b2e1eff28e27
-  Stored in directory: /root/.cache/pip/wheels/7e/18/13/038c34057808931c7ddc6c92d3aa015cf1a498df5a70268996
-Successfully built langdetect
-Installing collected packages: langdetect, deep-translator
-Successfully installed deep-translator-1.4.2 langdetect-1.0.9
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
-<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;wordnet&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">deep_translator</span> <span class="kn">import</span> <span class="n">GoogleTranslator</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">textblob</span> <span class="kn">import</span> <span class="n">TextBlob</span>
-<span class="kn">import</span> <span class="nn">langdetect</span>
-<span class="kn">from</span> <span class="nn">nltk.stem.snowball</span> <span class="kn">import</span> <span class="n">SnowballStemmer</span>
-<span class="kn">import</span> <span class="nn">re</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[nltk_data] Downloading package wordnet to /root/nltk_data...
-[nltk_data]   Unzipping corpora/wordnet.zip.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
     
     
 <div class="cell border-box-sizing code_cell rendered">
