@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Kristina Pluzharova | Data Scientist
-#description: Welcome to the Data Science blog.
+title: DS projects 
+description: Welcome to the Data Science blog by Kritina Pluzharova
 github_username: pluzharovakp
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "ds_projects"
