@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-<img style="float: right;" src="/_pages/IMG_1094_min.jpg" alt="photo" width="200"/>
+<img style="float: right;" src="/_pages/IMG_1094_min.jpg" alt="photo" width="200"/> ![](/_pages/IMG_1094_min.jpg)
 
 Hi! I'm glad to see you on my Data Science Projects site. 
 
