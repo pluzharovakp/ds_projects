@@ -4,9 +4,9 @@ title: About Me
 permalink: /about/
 ---
 
-Hi! I'm glad to see you on my Data Science Projects site. 
+<img style="float: right;" src="/_pages/IMG_1094_min.jpg" alt="photo" width="200"/>
 
-<img style="float: right;" src="./IMG_1094_min.jpg" alt="IMG_1094_min" width="200"/>
+Hi! I'm glad to see you on my Data Science Projects site. 
 
 My name is Kristina Pluzharova. I'm currently working as QA Engineer and I have 4+ years of experience in manual and automation testing.
 Being a Data scientist was always in my carrier plans, so I finished DS course by Yandex.Practicum and now take projects to expand my knowledge and to get more experience.
