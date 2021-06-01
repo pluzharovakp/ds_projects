@@ -119,14 +119,35 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://colab.research.google.com/github/pluzharovakp/ds_projects/blob/master/_notebooks/2021-03-10-_Practicum-Final-Project.ipynb.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<h1 id="Project-Description">Project Description<a class="anchor-link" href="#Project-Description"> </a></h1><p>The telecom operator Interconnect would like to be able to forecast their churn of clients. If it's discovered that a user is planning to leave, they will be offered promotional codes and special plan options. Interconnect's marketing team has collected some of their clientele's personal data, including information about their plans and contracts.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Project-Description">Project Description<a class="anchor-link" href="#Project-Description"> </a></h1><p>The telecom operator Interconnect would like to be able to forecast their churn of clients. If it's discovered that a user is planning to leave, they will be offered promotional codes and special plan options. Interconnect's marketing team has collected some of their clientele's personal data, including information about their plans and contracts.</p>
+<h1 id="Plan"><strong>Plan</strong><a class="anchor-link" href="#Plan"> </a></h1><ol>
+<li><a href="#Data-Preprocessing">Data Preprocessing</a><ul>
+<li>Look at the data</li>
+<li>Change data types</li>
+<li>Join the tables</li>
+<li>Make decition about NaN values</li>
+</ul>
+</li>
+<li><a href="#EDA">EDA</a><ul>
+<li>Figure out what data is more relevant for prediction task and what is the target value</li>
+<li>Try to find some pattern or new info that can be used</li>
+</ul>
+</li>
+<li><a href="#Model-Training">Models training</a><ul>
+<li>Use cross-validation for better traning</li>
+<li>Hyperparameter tuning</li>
+<li>Choose the best model rest on the choosen metric (AUC-ROC)</li>
+</ul>
+</li>
+<li><a href="#Test-the-model">Test the model</a></li>
+<li><a href="#Solution-Report">Conclusion</a> </li>
+</ol>
 
 </div>
 </div>
@@ -213,34 +234,6 @@ Successfully installed catboost-0.24.4
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Plan"><strong>Plan</strong><a class="anchor-link" href="#Plan"> </a></h1><ol>
-<li><a href="#Data-Preprocessing">Data Preprocessing</a><ul>
-<li>Look at the data</li>
-<li>Change data types</li>
-<li>Join the tables</li>
-<li>Make decition about NaN values</li>
-</ul>
-</li>
-<li><a href="#EDA">EDA</a><ul>
-<li>Figure out what data is more relevant for prediction task and what is the target value</li>
-<li>Try to find some pattern or new info that can be used</li>
-</ul>
-</li>
-<li><a href="#Model-Training">Models training</a><ul>
-<li>Use cross-validation for better traning</li>
-<li>Hyperparameter tuning</li>
-<li>Choose the best model rest on the choosen metric (AUC-ROC)</li>
-</ul>
-</li>
-<li><a href="#Test-the-model">Test the model</a></li>
-<li><a href="#Solution-Report">Conclusion</a> </li>
-</ol>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Data-Preprocessing"><strong>Data Preprocessing</strong><a class="anchor-link" href="#Data-Preprocessing"> </a></h1>
